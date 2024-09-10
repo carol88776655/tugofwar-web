@@ -47,6 +47,12 @@ export default function Screen() {
         alert("Right Win");
         break;
     }
+    if (result !== Result.NONE) {
+      setStart(false);
+      setLeftPersonCount(0);
+      setRightPersonCount(0);
+      setMoveX(0);
+    }
   }, [result]);
 
   return (
